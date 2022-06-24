@@ -6,7 +6,7 @@
 - [x] Barra de Navegación :bookmark_tabs:
 - [ ] Login
 - [ ] Página de Inicio (Télefonos Frecuentes | Accesos Directos | ? )
-- [ ] Crear Base de Datos (Tablas: Proveedores, Sitios, Historial de Reclamos, Enlaces Contratados, Enlaces Privados)
+- [ ] Crear Base de Datos (Tablas: Proveedores, Sitios, Historial de Reclamos, etc)
 - [ ] Pagina de Sitios
 - [ ] Pagina de Proveedores
 - [ ] Pagina de Enlaces Privados
