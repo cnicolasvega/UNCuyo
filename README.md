@@ -20,6 +20,6 @@
 - [ ] Pagina de Servicios (IPAM, Webmail, Cloud, UbiFi Controller, Bitwarden?, Altas)
 - [ ] Wiki NODO: Bookstack
 - [ ] Documentación: Netbox
-- [ ] Pagina de SpeedTest: HTML5 (Docker: VER)
+- [ ] Pagina de SpeedTest: HTML5 (Docker: VER) https://github.com/openspeedtest/Speed-Test
 - [ ] Pagina de Calculadora IP (JavaScript)
 - [ ] MAC Vendor (API)
