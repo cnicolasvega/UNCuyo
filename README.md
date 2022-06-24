@@ -19,7 +19,7 @@
 - [ ] Pagina de Monitoreo (Accesos Directos: Zabbix, Grafana, Nagios, Cacti)
 - [ ] Pagina de Servicios (IPAM, Webmail, Cloud, UbiFi Controller, Bitwarden?, Altas)
 - [ ] Wiki NODO: Bookstack
-- [ ] Documentación: Netbox
+- [ ] Documentación: Netbox https://github.com/netbox-community/netbox-docker
 - [ ] Pagina de SpeedTest: HTML5 (Docker: VER) https://github.com/openspeedtest/Speed-Test
 - [ ] Pagina de Calculadora IP (JavaScript)
 - [ ] MAC Vendor (API)
