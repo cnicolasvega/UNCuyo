@@ -1,4 +1,4 @@
-# NOC | Monitoreo | UNCuyo
+# NOC | Monitoreo | UNCuyo :computer:
 ## Seguimiento
 ```
 
