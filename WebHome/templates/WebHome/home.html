@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+    {% load static %}
+    <meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NOC | UNCuyo</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles-noc.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/favicon.png' %}"/>
+    <body>
+        <div id="contenedor"> 
+            <div id="home">
+                <a href="{% url 'home' %}" title=""><img src="{% static 'img/logo-noc.png' %}" id="home-img"></a>
+            </div>
+            <div id="navig">
+                <nav>
+                    <ul>
+                        <li>
+                            <div class="menu" id="inicio">
+                                <div class="spacer"></div>
+                                <div class="label"><a href="{% url 'home' %}" title="">Inicio</a></div>                            </div>
+                        </li>
+                        <li><div id="hr-menu"><hr></div></li>
+                        <li><div id="title">RECLAMOS</div></li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <div class="menu">
+                                        <div class="spacer"></div>
+                                        <div class="label"><a href="#" title=""><b>NUEVO</b> Reclamo</a></div>
+                                    </div>
+                                </li>
+                                <li><a href="#" title="">
+                                    <div class="menu">
+                                        <div class="spacer"></div>
+                                        <div class="label"><a href="#" title="">Historial</a></div>
+                                    </div>
+                                </li>
+                                <li><a href="#" title="">
+                                    <div class="menu">
+                                        <div class="spacer"></div>
+                                        <div class="label"><a href="#" title="">Enlaces Contratados</a></div>
+                                    </div>
+                                </li>
+                                <li><a href="#" title="">
+                                    <div class="menu">
+                                        <div class="spacer"></div>
+                                        <div class="label"><a href="#" title="">Enlaces Privados</a></div>
+                                    </div>
+                                </li>
+                                <li><a href="#" title="">
+                                    <div class="menu">
+                                        <div class="spacer"></div>
+                                        <div class="label"><a href="#" title="">Proveedores</a></div>
+                                    </div>
+                                </li>
+                                <li><a href="#" title="">
+                                    <div class="menu">
+                                        <div class="spacer"></div>
+                                        <div class="label"><a href="#" title="">Sitios</a></div>
+                                    </div>
+                                </li>
+                            </ul>                
+                        </li>
+                        <li><div id="hr-menu"><hr></div></li>
+                        <li><div id="title">NODO</div></li>
+                        <li>
+                            <ul>
+                                <li><a href="#" title="">
+                                    <div class="menu">
+                                        <div class="spacer"></div>
+                                        <div class="label"><a href="#" title="">Monitoreo Dashboard</a></div>
+                                    </div>
+                                </li>
+                                <li><a href="#" title="">
+                                    <div class="menu">
+                                        <div class="spacer"></div>
+                                        <div class="label"><a href="#" title="">Servicios</a></div>
+                                    </div>
+                                </li>
+                                <li><a href="#" title="">
+                                    <div class="menu">
+                                        <div class="spacer"></div>
+                                        <div class="label"><a href="#" title="">Wiki NODO</a></div>
+                                    </div>
+                                </li>
+                                <li><a href="#" title="">
+                                    <div class="menu">
+                                        <div class="spacer"></div>
+                                        <div class="label"><a href="#" title="">Documentación</a></div>
+                                    </div>
+                                </li>
+                            </ul>                
+                        </li>
+                        <li><div id="hr-menu"><hr></div></li>
+                        <li><div id="title">HERRAMIENTAS</div></li>
+                        <li>
+                            <ul>  
+                                <li><a href="#" title="">
+                                    <div class="menu">
+                                        <div class="spacer"></div>
+                                        <div class="label"><a href="#" title="">SpeedTest</a></div>
+                                    </div>
+                                </li>
+                                <li><a href="#" title="">
+                                    <div class="menu">
+                                        <div class="spacer"></div>
+                                        <div class="label"><a href="#" title="">Calculadora IP</a></div>
+                                    </div>
+                                </li>
+                                <li><a href="#" title="">
+                                    <div class="menu">
+                                        <div class="spacer"></div>
+                                        <div class="label"><a href="https://macvendors.com" title="" target="_blank">MAC Vendor</a></div>
+                                    </div>
+                                </li>
+                                <li><a href="#" title="">
+                                    <div class="menu">
+                                        <div class="spacer"></div>
+                                        <div class="label"><a href="#" title="">Wiki NOC UNCuyo</a></div>
+                                    </div>
+                                </li>
+                            </ul>                
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="content">
+            </div>
+        </div>
+    </body>
+</html>
