@@ -8,5 +8,6 @@ urlpatterns = [
     
     path('', home, name='home'),
     path('login', login_request, name='login'),
+    path('proveedores/', proveedores, name='proveedores'),
 
 ]

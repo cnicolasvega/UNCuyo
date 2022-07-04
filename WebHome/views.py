@@ -2,6 +2,7 @@
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, authenticate
 from django.shortcuts import render
+from .models import Proveedor
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -30,3 +31,10 @@ def login_request(request):
     else:
         form=AuthenticationForm()
         return render(request, 'WebHome/login.html', {'form':form})
+
+
+def proveedores(request):
+    proveedor = Proveedor.objects.all().order_by('proveedor')
+    context = {'proveedor':proveedor}
+
+    return render(request, "WebHome/proveedores.html", context)

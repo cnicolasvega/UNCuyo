@@ -53,7 +53,7 @@
                                 <li><a href="#" title="">
                                     <div class="menu">
                                         <div class="spacer"></div>
-                                        <div class="label"><a href="#" title="">Proveedores</a></div>
+                                        <div class="label"><a href="{% url 'proveedores' %}" title="">Proveedores</a></div>
                                     </div>
                                 </li>
                                 <li><a href="#" title="">
@@ -148,6 +148,9 @@
             </div>
             <div id="content">
             </div>
+            {% block contenidoQueCambia %}
+
+            {% endblock %}
         </div>
     </body>
 </html>
