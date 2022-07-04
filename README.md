@@ -8,7 +8,7 @@
 ```
 - [x] Barra de Navegación :bookmark_tabs:
 - [x] Login
--- [ ] Agregar visualizacion de usuario
+- [ ] Agregar visualizacion de usuario
 - [ ] Página de Inicio (Télefonos Frecuentes | Accesos Directos | ? )
 - [ ] Crear Base de Datos (Tablas: Proveedores, Sitios, Historial de Reclamos, etc)
 - [ ] Pagina de Sitios
