@@ -1,0 +1,16 @@
+{% extends "WebHome/home.html" %}
+
+{% load static %}
+{% block contenidoQueCambia %}
+<p> </p>
+    <div class="container">
+        <form method="post" enctype="multipart/form-data" class="text-right">{% csrf_token %}
+            {{ form.as_p }}
+            {{ form.media }}
+            <p> </p>
+            <input type="submit" class="btn btn-success" value="Crear reclamo">
+        </form>
+    </div>
+<p> </p>
+
+{% endblock %}

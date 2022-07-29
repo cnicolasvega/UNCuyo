@@ -1,0 +1,46 @@
+{% extends "WebHome/home.html" %}
+
+{% load static %}
+{% block contenidoQueCambia %}
+<div style="width:700px;margin:0 auto;">
+	<h2><a href="https://macvendors.co">Macvendors.co</a> JSONP API Example</h2>
+	<label>Enter mac address:</label>
+	<input type="text" id="mac_address" />
+	<input type="button" value="Lookup!" onclick="lookup();" />
+	<div id="result" style="margin-top:10px;"></div>
+	
+	
+</div>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+<script>
+function lookup (){
+	var mac_address= $('#mac_address').val();
+	if(mac_address.length < 6){
+		alert("Please enter at least 6 chars!");
+		return;
+	}
+	
+    $.ajax({
+        type: 'GET',
+        url: 'http://macvendors.co/api/jsonp/'+mac_address,
+        dataType: 'jsonp',
+        crossDomain: true,
+    }).done(function(response){
+		if(response.result.error){
+			$('#result').html(response.result.error);
+		}else{
+			$('#result').html("Company Name:"+response.result.company+"<br/>");
+			$('#result').append("Address: "+response.result.address+"<br/>");
+			$('#result').append("Mac Prefix: "+response.result.mac_prefix);
+		}
+    }).fail(function(error){
+        alert(error.statusText);
+    });
+}
+
+</script>
+{% endblock %}
+
+
+

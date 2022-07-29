@@ -1,0 +1,33 @@
+{% extends "WebHome/home.html" %}
+
+{% load static %}
+{% block contenidoQueCambia %}
+<table class="table table-striped table-dark">
+    <thead>
+      <tr style="text-align: center;">
+        <th scope="col">Sitio</th>
+        <th scope="col">Contacto</th>
+        <th scope="col">Proveedores</th>
+        <th scope="col">Numero de cliente</th>
+        <th scope="col">Tipo de enlace</th>
+        <th scope="col">Ubicación</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% if sitio %}
+    {% for sitio in sitio %}
+      <tr style="text-align: center;">
+        <td style="vertical-align:bottom">{{sitio.sitio}}</td>
+        <td style="vertical-align:bottom">{{sitio.persona_contacto}} {{sitio.num_contacto|cut:'0261-'}}</td>
+        <td style="vertical-align:bottom">{{sitio.proveedor_1}}</td>
+        <td style="vertical-align:bottom">{{sitio.num_cliente}}</td>
+        <td style="vertical-align:bottom">{{sitio.tipo_enlace}} - {{sitio.bandwitch}}</td>
+        <td style="vertical-align:bottom">{{sitio.ubicacion}}</td>
+      </tr>
+      </tr>
+    {% endfor %}
+    {% endif %}
+    </tbody>
+  </table>
+
+{% endblock %}

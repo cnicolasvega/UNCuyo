@@ -1,0 +1,42 @@
+{% extends "WebHome/home.html" %}
+
+{% load static %}
+{% block contenidoQueCambia %}
+
+<div class="row">
+    <div class="col-lg-18">
+      <h2 class="mt-4 text-center">Lista de reclamos</h2>
+        <div>
+            <h4 class="text-center">
+                Buscar reclamo:
+            </h4>
+            <form action="{% url 'buscar' %}" method="GET" class="text-center">
+                <input type="text" name="sitio" id="sitio">
+                <input button type="submit" class="btn btn-dark" value="Buscar">
+            </form>
+            {% if user.is_authenticated %}
+                <p class="text-center">
+                    <input button type="submit" class="btn btn-dark" value="Crear reclamo" href="{% url 'reclamos' %}">
+                </p>
+                <p> </p>
+            {% endif %}
+            <hr>
+        </div>
+    </div>
+</div>
+
+{% if object_list %}
+{% for reclamos in object_list %}
+{{ reclamos }}
+
+{% endfor %}
+
+{% else %}
+    <p> </p>
+    <div class="col text-center">
+        <h4>Ningun reclamo encontrado</h4>
+    </div>
+    <p> </p>
+{% endif %}
+
+{% endblock %}

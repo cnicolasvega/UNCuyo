@@ -22,6 +22,7 @@
                                 </div>
                             </div>
                         </li>
+                        {% if user.is_authenticated %}
                         <li><div id="hr-menu"><hr></div></li>
                         <li><div id="title">RECLAMOS</div></li>
                         <li>
@@ -29,13 +30,13 @@
                                 <li>
                                     <div class="menu">
                                         <div class="spacer"></div>
-                                        <div class="label"><a href="#" title=""><b>NUEVO</b> Reclamo</a></div>
+                                        <div class="label"><a href="{% url 'reclamos' %}" title=""><b>Nuevo</b> Reclamo</a></div>
                                     </div>
                                 </li>
                                 <li><a href="#" title="">
                                     <div class="menu">
                                         <div class="spacer"></div>
-                                        <div class="label"><a href="#" title="">Historial</a></div>
+                                        <div class="label"><a href="{% url 'listareclamos' %}" title="">Historial</a></div>
                                     </div>
                                 </li>
                                 <li><a href="#" title="">
@@ -59,7 +60,7 @@
                                 <li><a href="#" title="">
                                     <div class="menu">
                                         <div class="spacer"></div>
-                                        <div class="label"><a href="#" title="">Sitios</a></div>
+                                        <div class="label"><a href="{% url 'sitios' %}" title="">Sitios</a></div>
                                     </div>
                                 </li>
                             </ul>                
@@ -94,6 +95,8 @@
                                 </li>
                             </ul>                
                         </li>
+                        {% endif %}
+                        {% if not request.useris_authenticated %}
                         <li><div id="hr-menu"><hr></div></li>
                         <li><div id="title">HERRAMIENTAS</div></li>
                         <li>
@@ -113,7 +116,7 @@
                                 <li><a href="#" title="">
                                     <div class="menu">
                                         <div class="spacer"></div>
-                                        <div class="label"><a href="https://macvendors.com" title="" target="_blank">MAC Vendor</a></div>
+                                        <div class="label"><a href="#" title="">MAC Vendor</a></div>
                                     </div>
                                 </li>
                                 <li><a href="#" title="">
@@ -124,22 +127,24 @@
                                 </li>
                             </ul>                
                         </li>
+                        {% endif %}
                         <li><div id="hr-menu"><hr></div></li>
                         <li>
                             <ul>
                                 <li><a href="#" title="">
-                                    <div class="menu">
-                                        <div class="spacer"></div>
-                                        <div class="label"><a href="{% url 'login' %}" title="">Login</a></div>
-                                    </div>
-
-                                </li>
-                                <li><a href="#" title="">
-                                    
+                                    {% if user.is_authenticated %}
                                     <div class="menu">
                                         <div class="spacer"></div>
                                         <div class="label"><a href="{% url 'home' %}" title="">Logout</a></div>
                                     </div>
+                                    {% else %}
+                                    <li><a href="#" title="">
+                                        <div class="menu">
+                                            <div class="spacer"></div>
+                                            <div class="label"><a href="{% url 'login' %}" title="">Login</a></div>
+                                        </div>
+                                    </li>
+                                    {% endif %}
                                 </li>    
                             </ul>                
                         </li>
