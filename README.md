@@ -10,7 +10,7 @@
 - [x] Login
 - [ ] Agregar visualizacion de usuario
 - [ ] Página de Inicio (Télefonos Frecuentes | Accesos Directos | ? )
-- [ ] Crear Base de Datos (Tablas: Proveedores, Sitios, Historial de Reclamos, etc)
+- [ ] Crear Base de Datos (Tablas: Sitios, Historial de Reclamos, etc)
 - [ ] Pagina de Sitios
 - [ ] Pagina de Proveedores
 - [ ] Pagina de Enlaces Privados
